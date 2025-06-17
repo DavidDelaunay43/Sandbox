@@ -6,7 +6,7 @@ from PySide2.QtWidgets import (
     QApplication,
     QListView
 )
-from lib.model import Model
+from mvlib.model import Model
 
 
 def main():
