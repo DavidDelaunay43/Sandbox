@@ -5,6 +5,7 @@ from PySide2.QtWidgets import (
     QWidget
 )
 from node_editor_scene import Scene
+from node_editor_view import View
 
 
 class NodeEditorWidget(QWidget):
@@ -25,7 +26,7 @@ class NodeEditorWidget(QWidget):
         self._main_layout.setContentsMargins(0, 0, 0, 0)
         self.setLayout(self._main_layout)
 
-        self._view = QGraphicsView(self)
+        self._view = View(self)
         self._main_layout.addWidget(self._view)
 
         self._scene = Scene(self)
